@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $.getJSON("/podcasts", function (data) {
+    $.getJSON("/newPodcast", function (data) {
         for (var i = 0; i < data.length; i++) {
             $("#podcast").prepend(`<div class='card mb-4' id="pod-card" data-id="${data[i]._id}">`);
             if (data[i].img) {
