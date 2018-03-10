@@ -45,6 +45,7 @@ module.exports = {
             db.Podcast.create(results)
                 .then(function (data) {
                     console.log(data);
+                    res.json(data)
                 })
                 .catch(function (err) {
                     res.json(err);

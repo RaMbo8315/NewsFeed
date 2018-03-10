@@ -13,6 +13,6 @@ module.exports = function (app) {
 
     app.get("/podcasts", podcastController.allPodcasts);
 
-    app.get("/newPodcast", podcastController.scrapePod);
+    app.get("/newPodcasts", podcastController.scrapePod);
 
 }
